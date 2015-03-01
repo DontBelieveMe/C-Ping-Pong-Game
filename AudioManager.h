@@ -14,6 +14,9 @@ namespace blesbok
 		sf::SoundBuffer b_hit_player;
 		sf::Sound sfx_hit_player;
 
+		sf::SoundBuffer b_won_point;
+		sf::Sound sfx_won_point;
+
 	public:
 		AudioManager();
 		~AudioManager();
@@ -22,6 +25,7 @@ namespace blesbok
 
 		void play_hit_wall() { sfx_hit_wall.play(); }
 		void play_hit_player() { sfx_hit_player.play(); }
+		void play_gain_point() { sfx_won_point.play(); }
 	};
 };
 

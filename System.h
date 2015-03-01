@@ -4,7 +4,6 @@
 
 #include<iostream>
 #include<stdexcept>
-#include<Windows.h>
 
 namespace blesbok
 {
@@ -16,7 +15,7 @@ namespace blesbok
 		const std::string& title;
 
 		const unsigned int FPSCAP = 120;
-		
+
 		sf::RenderWindow* display;
 	public:
 		System(const unsigned int width, const unsigned int height, 

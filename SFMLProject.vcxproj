@@ -71,19 +71,38 @@
   <ItemGroup>
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="ScoreManager.cpp" />
     <ClCompile Include="System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="C:\Users\Barney\Documents\EclipseJavaWorkspace\Metagun\res\hitWall.wav" />
     <Media Include="hitPlayer.wav" />
+    <Media Include="point_gain.wav" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="Ball.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Paddle.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="ScoreManager.h" />
     <ClInclude Include="System.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="courier_new.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="abort_button_sprite.png" />
+    <Image Include="exit_button_sprite.png" />
+    <Image Include="play_button_sprite.png" />
+    <Image Include="resume_button_sprite.png" />
+    <Image Include="reume_button_sprite.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,22 +13,46 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\entity">
+      <UniqueIdentifier>{c5eb0943-a07e-4c15-9d70-9853183f1405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{1c693829-3044-4d51-8a2d-2e133cdb8f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entity">
+      <UniqueIdentifier>{7b35bacb-56bd-4901-a690-0c9e573495e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\system">
+      <UniqueIdentifier>{31c1d8ea-a49c-4efc-aa61-5d538db55171}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="System.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Source Files\entity</Filter>
     </ClCompile>
     <ClCompile Include="Paddle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ball.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\entity</Filter>
     </ClCompile>
     <ClCompile Include="AudioManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreManager.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseMenu.cpp">
+      <Filter>Source Files\system</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,19 +62,56 @@
     <Media Include="C:\Users\Barney\Documents\EclipseJavaWorkspace\Metagun\res\hitWall.wav">
       <Filter>Resource Files</Filter>
     </Media>
+    <Media Include="point_gain.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="System.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Ball.h">
+      <Filter>Header Files\entity</Filter>
     </ClInclude>
     <ClInclude Include="Paddle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ball.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\entity</Filter>
     </ClInclude>
     <ClInclude Include="AudioManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\system</Filter>
     </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreManager.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseMenu.h">
+      <Filter>Header Files\system</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="play_button_sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="exit_button_sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resume_button_sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="reume_button_sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="abort_button_sprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="courier_new.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>
