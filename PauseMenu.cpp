@@ -1,6 +1,8 @@
 #include "PauseMenu.h"
 
-
+/*
+Load in pause menu resources
+*/
 blesbok::PauseMenu::PauseMenu(FontManager* f_mana, unsigned int ww, unsigned int wh)
 {
 	t_resume.loadFromFile("resume_button_sprite.png");
@@ -17,11 +19,18 @@ blesbok::PauseMenu::~PauseMenu()
 {
 }
 
+/*
+Poll Inputs -> Use Enter to return to games
+*/
 void blesbok::PauseMenu::tick()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) paused = false;
 }
 
+/*
+Check Pause Menu Buttons
+Draw the buttons
+*/
 void blesbok::PauseMenu::draw(sf::RenderWindow* display)
 {
 	if (is_pressed(sprite_resume, display, -100, 0)) paused = false;
@@ -31,6 +40,9 @@ void blesbok::PauseMenu::draw(sf::RenderWindow* display)
 	display->draw(sprite_resume);
 }
 
+/*
+Check Button Collisions
+*/
 bool blesbok::PauseMenu::is_pressed(sf::Sprite sprite, sf::RenderWindow* display,
 	int x_offset = 0, int y_offset = 0)
 {
