@@ -1,2 +1,2 @@
-# C-Ping-Pong-Game
+# Ping-Pong-Game
 A C++ Pong Game
